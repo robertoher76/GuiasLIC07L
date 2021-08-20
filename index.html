@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home | LIC 07L</title>
+
+    <link rel="stylesheet" href="https://robertomelendez.w3spaces.com/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Jquery-->
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+</head>
+
+<body>
+    <section class="home">
+        <!--
+            <h1>Discusiones LIC 07L - Ciclo II 2021</h1>
+        -->
+    </section>
+    <section class="discusiones">
+        <div class="container">
+            <h1>Discusiones LIC 07L</h1>
+            <p>Roberto Ezequiel Meléndez Hernández MH181960</p>
+            <section class="discusion">
+                <div class="primary-box btn-arrow">
+                    <h2>Guía #1 - Introducción a HTML</h2>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/>
+                        </svg>
+                    </span>
+                </div>
+                <div class="secondary-box">
+                    <ul>
+                        <li>
+                            <div>
+                                <h3>Programa Favorito</h3>
+                            </div>
+                            <div class="link">
+                                <a href="https://robertomelendez.w3spaces.com/programa-fav.html" class="btn">Ver más</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h3>Centroamérica</h3>
+                            </div>
+                            <div class="link">
+                                <a href="https://robertomelendez.w3spaces.com/el-salvador.html" class="btn">Ver más</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="discusion">
+                <div class="primary-box btn-arrow">
+                    <h2>Guía #2 - Introducción a CSS</h2>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/>
+                        </svg>
+                    </span>
+                </div>
+                <div class="secondary-box">
+                    <ul>
+                        <li>
+                            <div>
+                                <h3>Programa Favorito con CSS</h3>
+                            </div>
+                            <div class="link">
+                                <a href="https://robertomelendez.w3spaces.com/" class="btn">Ver más</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h3>Centroamérica con CSS</h3>
+                            </div>
+                            <div class="link">
+                                <a href="https://robertomelendez.w3spaces.com/" class="btn">Ver más</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h3>Biografía</h3>
+                            </div>
+                            <div class="link">
+                                <a href="https://robertomelendez.w3spaces.com/" class="btn">Ver más</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <p>© 2021 Machine QR | Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function() {
+            $(".btn-arrow").click(function() {
+                $(this).closest(".discusion").find(".secondary-box").slideToggle("slow");
+                $(this).closest(".discusion").find(".primary-box").toggleClass("active");
+            });
+        });
+    </script>
+
+</body>
+
+</html>
