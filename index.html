@@ -15,7 +15,7 @@
 
     <!-- Jquery-->
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-
+    <script src="app.js"></script>
 </head>
 
 <body>
@@ -234,28 +234,6 @@
             </div>
         </footer>
     </main>
-
-    <script>
-        $(document).ready(function() {
-
-            $(".btn-arrow").click(function() {
-                $(this).closest(".discusion").find(".secondary-box").slideToggle("slow");
-                $(this).closest(".discusion").find(".primary-box").toggleClass("active");
-            });
-
-            $(".menu-item").click(function() {
-                $(this).toggleClass("selected");
-                $(this).closest(".practica").find(".ejercicios").slideToggle("slow");
-            });
-
-            $(".menu-icon").click(function() {
-                $("header").toggleClass("active");
-                $("body").toggleClass("mobile");
-                $(".menu-mobile").fadeToggle("slow");
-            });
-        });
-    </script>
-
 </body>
 
 </html>
